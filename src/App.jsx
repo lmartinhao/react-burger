@@ -1,15 +1,23 @@
 import { products } from "./products.json";
-import './App.css'
-import ProcuctCard from './ProductCard'
+import ProcuctCard from './components/ProductCard'
+import { Header } from "./components/header";
+
+import styles from './App.module.css';
 
 function App() {
-  console.log(products)
 
   return (
-    <div className="App">
-      <h2>Produtos</h2>
+    <div>
+      <Header />
 
-      {products.map((product) => <ProcuctCard name={product.name} price={product.price} />)}
+      <div className={styles.wrapper}>
+        {products.map((product) =>
+        <ProcuctCard
+          name={product.name}
+          price={product.price}
+          pic={product.url}
+        />)}
+      </div>
 
     </div>
   )
