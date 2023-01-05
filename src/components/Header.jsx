@@ -5,7 +5,7 @@ export function Header() {
 
   return (
     <header className={styles.header}>
-      <img src={burgerLogo} alt="Logotipo do Ignite" />
+      <img src={burgerLogo} alt="Logotipo do React Burger" />
       <span className={styles.headerText}>React Burger</span>
     </header>
   )
