@@ -1,6 +1,6 @@
 import { products } from "./products.json";
 import ProcuctCard from './components/ProductCard'
-import { Header } from "./components/header";
+import { Header } from "./components/Header";
 
 import styles from './App.module.css';
 
