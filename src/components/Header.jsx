@@ -1,5 +1,5 @@
 import styles from './Header.module.css';
-import burgerLogo from '../../public/logo.png';
+import burgerLogo from '../assets/logo.png';
 
 export function Header() {
 
