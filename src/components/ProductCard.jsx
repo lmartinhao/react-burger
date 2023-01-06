@@ -8,15 +8,18 @@ import removeFromCart from '../assets/remove-from-cart.png';
 function ProcuctCard(props) {
   const [count, setCount] = useState(0);
 
-  function funcAdicionar() {
+  function funcAdicionar(event) {
+    event.preventDefault();
     setCount((count) => count + 1);
   };
 
-  function funcRemover() {
+  function funcRemover(event) {
     if (count > 0) {
+      event.preventDefault();
       setCount((count) => count - 1);
     }
     else {
+      event.preventDefault();
       alert('Você não tem nenhum item deste tipo adicionado');
     }
   };
