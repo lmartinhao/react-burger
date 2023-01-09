@@ -13,6 +13,7 @@ function App() {
       <div className={styles.wrapper}>
         {products.map((product) =>
         <ProcuctCard
+          key={product.id}
           name={product.name}
           price={product.price}
           pic={product.url}
