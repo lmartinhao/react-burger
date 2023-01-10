@@ -10,13 +10,18 @@ function ProcuctCard(props) {
 
   function funcAdicionar(event) {
     event.preventDefault();
-    setCount((count) => count + 1);
+    setCount((count) => {
+      return count + 1
+    });
   };
 
   function funcRemover(event) {
     if (count > 0) {
       event.preventDefault();
-      setCount((count) => count - 1);
+
+      setCount((count) => {
+        return count - 1
+      });
     }
     else {
       event.preventDefault();
